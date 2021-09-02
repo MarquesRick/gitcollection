@@ -7,7 +7,8 @@ export const Routes: React.FC = () => {
   return (
     <Switch>
       <Route component={Dashboard} path="/" exact />
-      <Route component={Repo} path="/repositories" />
+      {/* para que o react entenda que será enviado apenas um parâmetro, é necessário colocar o '+' */}
+      <Route component={Repo} path="/repositories/:repository+" />
     </Switch>
   );
 };

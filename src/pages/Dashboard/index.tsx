@@ -24,7 +24,7 @@ interface IGithubRepository {
   };
 }
 
-export const Dashboard: React.FC = () => {
+const Dashboard: React.FC = () => {
   //inicia o componente verificando se o localStorage (lista) está vazia
   //se estiver, retorna arrayVazio senão retornar os repositórios
   const [repos, setRepos] = useState<IGithubRepository[]>(() => {
@@ -116,3 +116,5 @@ export const Dashboard: React.FC = () => {
     </>
   );
 };
+
+export default Dashboard;

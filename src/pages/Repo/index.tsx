@@ -32,7 +32,7 @@ interface IGithubIssues {
   };
 }
 
-export const Repo: React.FC = () => {
+const Repo: React.FC = () => {
   //pode ser do tipo IGithubRepository ou também nulo
   const [repository, setRepository] = useState<IGithubRepository | null>(null);
   const [issues, setIssues] = useState<IGithubIssues[]>([]);
@@ -108,3 +108,5 @@ export const Repo: React.FC = () => {
     </>
   );
 };
+
+export default Repo;
